@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Candal&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Task-2</title>
+</head>
+<body>
+        
+    <header>
+        <div class="logo">
+            <h1 class="logo-text"><span>&copy;</span>ontent</h1>
+        </div>
+        
+        <ul class="nav">
+            <li><a href="index.html"><strong>Registration Form</strong></a></li>
+            <li><a href="carousel.html"><strong>Carousel</strong></a></li>
+        </ul>
+    </header>
+
+    <div class="page">
+        <div class="register">
+            <form class="form">
+                <p class="title">Register </p>
+                <p class="message">Signup now and get full access to our app. </p>
+                <div class="flex">
+                    <label>
+                        <input class="input" type="text" placeholder="" required="">
+                        <span>Firstname</span>
+                    </label>
+
+                    <label>
+                        <input class="input" type="text" placeholder="" required="">
+                        <span>Lastname</span>
+                    </label>
+                </div>  
+                        
+                <label>
+                    <input class="input" type="email" placeholder="" required="">
+                    <span>Email</span>
+                </label> 
+
+                <div class="flex" id="contact">
+                    <label>
+                        <input class="input" type="contact" placeholder="" required="">
+                        <span>Contact No.</span>
+                    </label>
+
+                    <div class="flex" id="gender">
+                        <span>Gender:</span>
+                    <label class="gender">
+                        <select class="input" type="gender" placeholder="" required="">
+                            <option value="" disabled selected>--Select--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </label>
+                    </div>
+                </div> 
+
+                <label>
+                    <input class="input" type="password" placeholder="" required="">
+                    <span>Password</span>
+                </label>
+                <label>
+                    <input class="input" type="password" placeholder="" required="">
+                    <span>Confirm password</span>
+                </label>
+                <button class="submit">Submit</button>
+                <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="footer-content">
+
+                <div class="footer-section name">
+                    <h1 class="logo-text"><span>&copy;</span>ontent</h1>
+                </div>
+
+                <div class="footer-section link">
+                        <h2><a href="#">Top</a></h2>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                &copy; content.com | Designed by Shobhit
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

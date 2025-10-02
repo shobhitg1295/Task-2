@@ -1,0 +1,316 @@
+*{    box-sizing: border-box;
+}
+
+.lora-uniquifier {
+    font-family: "Lora", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+}
+
+html, 
+body {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: #333;
+    font-family: '', serif;
+    font-family: 'Lora', serif;
+}
+
+.candal-regular {
+    font-family: "Candal", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header {
+    background: #1a1a1a;
+    height: 66px;
+    margin-bottom: 30px;
+}
+
+header *{
+    color: white;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text {
+    margin: 9px;
+    font-family: 'Lora', serif;
+}
+
+header .logo-text span {
+    color: aqua;
+}
+
+header ul {
+    
+    display: flex;
+    gap: 20px;
+    float: right;
+    margin: 0px;
+    padding: 22px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li a:hover {
+    background: #08595c;
+    transition: 0.5s;
+}
+
+header ul li a {
+    text-decoration: none;
+}
+
+.page {
+    min-height: 100%;
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+    background-color: #1a1a1a;
+    color: #fff;
+    border: 1px solid #333;
+    margin: 100px auto 100px auto;
+}
+  
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #00bfff;
+    margin: auto;
+}
+  
+.message, 
+.signin {
+    font-size: 14.5px;
+    color: rgba(255, 255, 255, 0.7);
+}
+  
+.signin {
+    text-align: center;
+}
+  
+.signin a:hover {
+    text-decoration: underline royalblue;
+}
+  
+.signin a {
+    color: #00bfff;
+}
+  
+.flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+}
+ 
+.form label {
+    position: relative;
+}
+  
+.form label .input {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    padding: 20px 05px 05px 10px;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    border-radius: 10px;
+}
+  
+.form label .input + span {
+    color: rgba(255, 255, 255, 0.5);
+    position: absolute;
+    left: 10px;
+    top: 0px;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label .input:placeholder-shown + span {
+    top: 12.5px;
+    font-size: 0.9em;
+}
+
+.form label .input:focus + span,
+.form label .input:valid + span {
+    color: #00bfff;
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+  
+.input {
+    font-size: medium;
+}
+  
+.submit {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    background-color: #00bfff;
+}
+  
+.submit:hover {
+    background-color: #00bfff96;
+}
+  
+@keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+}
+
+.footer {
+    background: #1a1a1a;
+    color: #f6f6f6;
+    height: 120px;
+    position: relative;
+}
+
+.footer .footer-content h1,
+.footer .footer-content h2 {
+    color: white;
+    font-family: "Candla", serif;
+}
+
+.footer .footer-content .name h1 span{
+    color: aqua;
+    margin-left: 5px;
+    font-family: "lora", serif;
+}
+
+.footer .footer-content .link {
+    position: relative;
+    width: 20%;
+    margin-left: auto;
+    display: block;
+    float: initial;
+    margin-bottom: 10px;
+}
+
+.footer .footer-bottom {
+    background: #686868;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    padding-top: 10px;
+}
+
+/* Carousel*/
+.trending-post {
+    position: relative;
+}
+
+.trending-post .hea {
+    text-align: center;
+     margin: 30px auto;
+     color: #00bfff;
+}
+
+.trending-post .post-wrapper {
+    width: 84%;
+    height: 280px;
+    margin: 0px auto;
+    overflow: hidden;
+    padding: 10px 0px 10px 0px;
+}
+
+.trending-post .post-wrapper .post {
+    height: 255px;
+    width: 350px;
+    display: inline-block;
+    background: #1a1a1a;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 1rem 1rem 1rem -1rem #1a1a1a;
+}
+
+.trending-post .post-wrapper .post .post-info{
+    height: 20px;
+    padding: 0px 5px;
+}
+
+.trending-post .post-wrapper .post .post-image{
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
+/* 5-star*/ 
+.rating:not(:checked) > input {
+    position: absolute;
+    appearance: none;
+  }
+  
+  .rating:not(:checked) > label {
+    float: right;
+    cursor: pointer;
+    font-size: 30px;
+    color: #666;
+  }
+  
+  .rating:not(:checked) > label:before {
+    content: '★';
+  }
+  
+  .rating > input:checked + label:hover,
+  .rating > input:checked + label:hover ~ label,
+  .rating > input:checked ~ label:hover,
+  .rating > input:checked ~ label:hover ~ label,
+  .rating > label:hover ~ input:checked ~ label {
+    color: #e58e09;
+  }
+  
+  .rating:not(:checked) > label:hover,
+  .rating:not(:checked) > label:hover ~ label {
+    color: #ff9e0b;
+  }
+  
+  .rating > input:checked ~ label {
+    color: #ffa723;
+  }
+  
+  
+  
+  
